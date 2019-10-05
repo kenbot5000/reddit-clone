@@ -1,0 +1,230 @@
+/* Variables */
+:root {
+    --main-green: #00b533;
+    --sub: #EEE;
+    --main: #FFF;
+    --green-highlight: #27b500;
+}
+
+/* NAVBAR */
+/* Wrapper */
+.navbar {
+    background-color: #FFFFFF;
+    height: 40px;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 16px #DDD;
+}
+
+/* Content */
+.navbar-content {
+    display: flex;
+    justify-content: space-around;
+    height: inherit;
+    line-height: 40px;
+}
+
+/* Brand */
+.navbar-title {
+    font-size: 24px;
+    color: var(--main-green);
+}
+
+.navbar-logo {
+    max-height: 32px;
+    vertical-align: text-top;
+}
+
+.navbar-title-text {
+    vertical-align: middle;
+}
+
+/* Search Bar */
+.searchbar {
+    vertical-align: middle;
+    height: 32px;
+    color: var(--main-green);
+    background-color: var(--sub);
+    border: none;
+    width: 720px;
+    padding-left: 24px;
+    border-radius: 24px;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 16px;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.10);
+}
+
+.searchbar::placeholder {
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 16px;
+    color: var(--green-highlight);
+}
+
+/* Login */
+.login-bar {
+    color: var(--main-green);
+    vertical-align: middle;
+}
+
+.login-username {
+    margin-left: 16px;
+}
+
+.login-link:link {
+  text-decoration: none;
+  color: var(--main-green);
+}
+
+.login-link:visited {
+  text-decoration: none;
+  color: var(--main-green);
+}
+
+/* Main Area */
+.main {
+    width: 80vw;
+    margin: 40px auto;
+}
+
+/* Feature Cards */
+.cards {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--main);
+    height: auto;
+    border-radius: 32px;
+    color: var(--main);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-space {
+    flex-grow: 1;
+}
+
+.card-text {
+    max-height: 80px;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.card-sub {
+    display: block;
+    font-size: 16px;
+}
+
+.card-1 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.67%, rgba(167, 167, 167, 0) 55.21%, rgba(0, 0, 0, 0.6) 80.73%), url("../img/1.jpg");
+    background-size: cover;
+    grid-column: 2 / 4;
+}
+
+.card-2 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.67%, rgba(167, 167, 167, 0) 55.21%, rgba(0, 0, 0, 0.6) 80.73%), url("../img/2.jpg");
+    background-size: cover;
+    grid-column: 4 / 6;
+}
+
+.card-3 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.67%, rgba(167, 167, 167, 0) 55.21%, rgba(0, 0, 0, 0.6) 80.73%), url("../img/3.jpg");
+    background-size: cover;
+    grid-column: 6 / 8;
+}
+
+/* Posts */
+
+.postwrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.post {
+    display: flex;
+    background-color: var(--main);
+    border-radius: 0px 24px 24px 0px;
+    max-width: 1200px;
+    box-shadow: 8px 16px 10px #CCC;
+}
+
+.post-content {
+    margin: 24px;
+}
+
+.post-title {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.post-title-main {
+    font-size: 24px;
+}
+
+.rating {
+    background-color: var(--main-green);
+    font-size: 24px;
+    color: var(--main);
+    display: flex;
+    flex-direction: column;
+    padding: 16px 8px;
+    text-align: center;
+}
+
+.rating > a:link {
+  text-decoration: none;
+  color: var(--main);
+}
+
+.rating > a:visited {
+  text-decoration: none;
+  color: var(--main);
+}
+
+/* Post Image and Comment */
+.post-image {
+    max-width: 80%;
+    height: auto;
+    margin-right: 32px;
+}
+
+/* Top Posts */
+.topposts {
+    width: 400px;
+    margin-left: 40px;
+    max-height: auto;
+    margin-bottom: auto;
+    background-color: var(--main);
+    border-radius: 16px;
+    box-shadow: 8px 16px 10px #CCC;
+    padding: 24px;
+    font-size: 24px;
+}
+
+.topposts-card {
+    color: var(--main);
+    background-color: var(--main-green);
+    padding: 16px;
+    margin: 8px;
+    box-shadow: 8px 8px 10px #CCC;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--sub);
+    font-family: "Red Hat Text", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
